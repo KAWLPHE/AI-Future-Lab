@@ -1,25 +1,29 @@
 # AI Future Lab
 
-AI Future Lab is a modern educational website about Artificial Intelligence and Machine Learning. The website explains what AI is, how Machine Learning works, where AI is used, and how beginners can start learning AI.
+AI Future Lab is a modern educational website about Artificial Intelligence and Machine Learning.
+
+The website explains what Artificial Intelligence is, how Machine Learning works, where AI is used, and how beginners can start learning AI.
 
 ## Description
 
-This project is a responsive web page created with HTML, CSS, and JavaScript. It includes different sections about Artificial Intelligence, Machine Learning types, AI applications, project examples, a learning roadmap, and an interactive quiz.
+This project is a responsive AI-themed website created with HTML, CSS, and JavaScript. It includes educational sections, AI applications, Machine Learning types, project examples, a learning roadmap, an interactive quiz, and a contact form.
 
 ## Features
 
-- Modern AI-themed design
-- Responsive layout for desktop, tablet, and mobile
-- Home section with a technology-style introduction
+- Modern AI-themed website
+- Responsive design for desktop, tablet, and mobile
+- Navigation menu
+- Home section
 - About AI section
-- Machine Learning explanation
-- AI applications cards
+- AI applications section
+- Machine Learning types section
 - AI project examples
-- Skills roadmap
+- Learning roadmap
 - Interactive quiz
 - Contact form
-- Burger menu for mobile devices
 - Smooth scrolling
+- Burger menu for mobile devices
+- JavaScript functionality
 - Clean and beginner-friendly code
 
 ## Project Files
@@ -46,19 +50,35 @@ ai-future-lab/
 
 ## How to Run
 
+### Important
+
+Do not open the project by double-clicking `index.html`.
+
+If you open the file like this:
+
+```text
+file:///C:/Users/user/Downloads/ai-future-lab/index.html
+```
+
+the website may open without proper styles and JavaScript. It can look like plain text with blue links.
+
+This project should be started through the terminal using `npm run dev`.
+
+## Steps to Run the Project
+
 ### Step 1: Open the project folder
 
-Open the `ai-future-lab` project folder in Visual Studio Code.
+Open the `ai-future-lab` folder in Visual Studio Code.
 
 ### Step 2: Open the terminal
 
-Open the terminal inside the project folder.
-
-In Visual Studio Code, you can do this:
+In Visual Studio Code, open a new terminal:
 
 ```text
 Terminal → New Terminal
 ```
+
+Make sure the terminal is opened inside the `ai-future-lab` project folder.
 
 ### Step 3: Install dependencies
 
@@ -84,35 +104,31 @@ After running the command, the terminal will show a local link, for example:
 http://localhost:5173
 ```
 
-Open this link in your browser to view the website.
+Open this link in your browser.
 
-## Important Note
+## Correct Way to Open the Website
 
-Do not open the project by double-clicking `index.html`.
+Use this:
 
-If you open it like this:
+```text
+http://localhost:5173
+```
+
+Do not use this:
 
 ```text
 file:///C:/Users/user/Downloads/ai-future-lab/index.html
-```
-
-the page may not work correctly or may show a blank screen.
-
-This project should be started with:
-
-```bash
-npm run dev
 ```
 
 ## Website Sections
 
 ### Home
 
-The main introduction section with the website title, short description, and call-to-action button.
+The main section with the website title, short introduction, and buttons.
 
 ### About AI
 
-Explains the meaning of Artificial Intelligence and how it is different from Machine Learning.
+Explains what Artificial Intelligence is and how it is different from Machine Learning.
 
 ### Applications
 
@@ -128,7 +144,7 @@ Explains the main types of Machine Learning:
 
 ### Projects
 
-Shows examples of AI projects, such as:
+Shows examples of AI projects:
 
 - Chatbot
 - Face Recognition
@@ -137,13 +153,13 @@ Shows examples of AI projects, such as:
 - Image Generator
 - Voice Assistant
 
-### Skills Roadmap
+### Roadmap
 
-Shows a beginner-friendly roadmap for learning AI and Machine Learning.
+Shows a beginner-friendly learning path for AI and Machine Learning.
 
 ### Quiz
 
-Includes a simple JavaScript quiz about AI and Machine Learning.
+Includes an interactive quiz created with JavaScript.
 
 ### Contact
 
@@ -151,7 +167,7 @@ Includes a contact form where users can enter their name, email, and message.
 
 ## Troubleshooting
 
-If `npm run dev` does not work, check that Node.js is installed on your computer.
+If `npm run dev` does not work, check if Node.js is installed.
 
 Check Node.js version:
 
@@ -165,7 +181,9 @@ Check npm version:
 npm -v
 ```
 
-If Node.js is not installed, install it first. Then run:
+If Node.js is not installed, install it first.
+
+Then run:
 
 ```bash
 npm install
