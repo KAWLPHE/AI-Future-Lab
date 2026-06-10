@@ -1,0 +1,590 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="AI Future Lab — современный образовательный портал об искусственном интеллекте, нейросетях и машинном обучении" />
+    <title>AI Future Lab — Искусственный Интеллект и Машинное Обучение</title>
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+
+    <!-- Header & Navigation Bar -->
+    <header class="header" id="header">
+      <div class="container nav-container">
+        <a href="#home" class="logo" id="headerLogo">
+          <div class="logo-icon">🧠</div>
+          <div class="logo-text">AI <span>Future Lab</span></div>
+        </a>
+        
+        <button class="burger-btn" id="burgerBtn" aria-label="Открыть мобильное меню">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </button>
+
+        <nav>
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="#home" class="nav-link active">Главная</a></li>
+            <li><a href="#about" class="nav-link">Что такое ИИ</a></li>
+            <li><a href="#apps" class="nav-link">Применение</a></li>
+            <li><a href="#ml-types" class="nav-link">Типы обучения</a></li>
+            <li><a href="#projects" class="nav-link">ИИ Проекты</a></li>
+            <li><a href="#roadmap" class="nav-link">Дорожная карта</a></li>
+            <li><a href="#quiz" class="nav-link">Интерактивный тест</a></li>
+            <li><a href="#contact" class="nav-link">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- 1. Hero Section -->
+    <section class="hero" id="home">
+      <div class="tech-grid-bg"></div>
+      <div class="glow-orb-one"></div>
+      <div class="glow-orb-two"></div>
+      
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge animate-on-scroll">
+            <span></span>Будущее уже наступило
+          </div>
+          <h1 class="animate-on-scroll delay-100">
+            <span class="gradient-text-1">Artificial Intelligence</span>
+            <span class="gradient-text-2">&amp; Machine Learning</span>
+          </h1>
+          <p class="hero-desc animate-on-scroll delay-200">
+            Добро пожаловать в AI Future Lab. Разберитесь, как работают нейросети, машинное обучение и технологии, которые меняют наш мир прямо сейчас.
+          </p>
+          <div class="hero-buttons animate-on-scroll delay-300">
+            <a href="#about" class="btn btn-primary" id="btnStartLearning">
+              Начать обучение
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+            <a href="#quiz" class="btn btn-secondary" id="btnTryQuiz">Пройти Тест</a>
+          </div>
+
+          <!-- Futuristic Terminal Element -->
+          <div class="terminal-wrapper animate-on-scroll delay-400">
+            <div class="terminal-header">
+              <span class="terminal-dot dot-red"></span>
+              <span class="terminal-dot dot-yellow"></span>
+              <span class="terminal-dot dot-green"></span>
+              <span class="terminal-title">core-neural-v4.sh</span>
+            </div>
+            <div class="terminal-body" id="heroTerminal">
+              <p>&gt; Инициализация искусственной нейронной сети...</p>
+              <p>&gt; Загрузка баз данных... <span style="color: var(--neon-green)">УСПЕШНО [100%]</span></p>
+              <p>&gt; AI Future Lab готов к работе. Задайте параметры обучения.<span class="terminal-cursor"></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. About AI Section -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <h2>Основы Искусственного Интеллекта</h2>
+          <p>В чем суть самой обсуждаемой технологии XXI века и из чего она состоит?</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-intro animate-on-scroll">
+            <div class="about-intro-text">
+              <p>
+                <strong>Искусственный интеллект (ИИ / AI)</strong> — это широкая область компьютерных наук, занимающаяся созданием интеллектуальных систем, способных выполнять задачи, которые традиционно требуют человеческого разума. Это может быть распознавание речи, принятие оптимальных решений, перевод языков или творческий синтез.
+              </p>
+              <div class="about-diff-box">
+                <h4>Разница между AI и Machine Learning</h4>
+                <p>
+                  Искусственный интеллект — это общая масштабная концепция «разумных машин». <strong>Машинное обучение (ML)</strong> — это практический подметод ИИ, который обучает компьютеры находить скрытые паттерны и учиться на примерах данных самостоятельно, вместо выполнения строго заложенных алгоритмических правил.
+                </p>
+              </div>
+            </div>
+            
+            <div class="about-viz">
+              <div class="venn-diagram">
+                <div class="venn-circle circle-ai">Artificial Intelligence</div>
+                <div class="venn-circle circle-ml">Machine Learning</div>
+                <div class="venn-circle circle-dl">Deep Learning</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-cards">
+            <!-- Card 1 -->
+            <div class="glass-card about-card animate-on-scroll" id="cardAboutAI">
+              <span class="card-num">MODULE_01</span>
+              <h3>Artificial Intelligence</h3>
+              <p>Создание алгоритмов и интеллектуальных агентов, имитирующих человеческое поведение, логику, обобщение информации и выстраивание умозаключений для оптимизации сложных процессов.</p>
+            </div>
+            <!-- Card 2 -->
+            <div class="glass-card about-card purple animate-on-scroll delay-100" id="cardAboutML">
+              <span class="card-num">MODULE_02</span>
+              <h3>Machine Learning</h3>
+              <p>Методология, обучающая математическую модель на наборах исторических данных. Алгоритм улучшает точность своих прогнозов и действий по мере накопления новой информации.</p>
+            </div>
+            <!-- Card 3 -->
+            <div class="glass-card about-card magenta animate-on-scroll delay-200" id="cardAboutNN">
+              <span class="card-num">MODULE_03</span>
+              <h3>Neural Networks</h3>
+              <p>Системы, вдохновленные структурой человеческого мозга. Они состоят из взаимосвязанных узлов (нейронов), распределяющих сигналы для глубокого распознавания медиафайлов и звуков.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Applications Section -->
+    <section class="applications" id="apps">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <h2>Сферы применения ИИ</h2>
+          <p>Искусственный интеллект уже незаметно формирует мировую инфраструктуру</p>
+        </div>
+
+        <div class="apps-grid">
+          <!-- Card 1 -->
+          <div class="glass-card app-card animate-on-scroll" id="appMedicine">
+            <div class="app-icon">🩺</div>
+            <div>
+              <h3 class="app-card-title">Медицина</h3>
+              <p class="app-card-desc">Диагностика онкологии на ранних стадиях по КТ-снимкам, прогнозирование мутаций вирусов и автоматическая разработка формул новых медикаментов.</p>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="glass-card app-card animate-on-scroll delay-100" id="appEducation">
+            <div class="app-icon">🎓</div>
+            <div>
+              <h3 class="app-card-title">Образование</h3>
+              <p class="app-card-desc">Индивидуальные программы адаптивного обучения студентов на основе их темпа усвоения материала, автоматическая проверка научных эссе.</p>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="glass-card app-card animate-on-scroll delay-200" id="appTransport">
+            <div class="app-icon">🚗</div>
+            <div>
+              <h3 class="app-card-title">Транспорт</h3>
+              <p class="app-card-desc">Системы компьютерного зрения в беспилотных автомобилях, умные светофоры для минимизации заторов в мегаполисах и оптимизация логистики.</p>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="glass-card app-card animate-on-scroll" id="appFinance">
+            <div class="app-icon">🏦</div>
+            <div>
+              <h3 class="app-card-title">Финансы</h3>
+              <p class="app-card-desc">Выявление признаков мошенничества по транзакциям в банках (Anti-fraud), интеллектуальная оценка кредитных рисков и алгоритмический трейдинг.</p>
+            </div>
+          </div>
+          <!-- Card 5 -->
+          <div class="glass-card app-card animate-on-scroll delay-100" id="appGames">
+            <div class="app-icon">🎮</div>
+            <div>
+              <h3 class="app-card-title">Игры</h3>
+              <p class="app-card-desc">Создание непредсказуемого поведения NPC, процедурная генерация 3D-текстур, адаптивная сложность под стиль ведения боя игроком.</p>
+            </div>
+          </div>
+          <!-- Card 6 -->
+          <div class="glass-card app-card animate-on-scroll delay-200" id="appRobots">
+            <div class="app-icon">🤖</div>
+            <div>
+              <h3 class="app-card-title">Робототехника</h3>
+              <p class="app-card-desc">Автономные промышленные манипуляторы со встроенным машинным зрением, роботы-спасатели при ЧС и автоматика складов Amazon.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Machine Learning Types Section -->
+    <section class="ml-types" id="ml-types">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <h2>Классические типы Машинного Обучения</h2>
+          <p>Как именно компьютеры учатся делать точные выводы? 3 основных подхода</p>
+        </div>
+
+        <div class="types-grid">
+          <!-- Supervised -->
+          <div class="glass-card type-card cyan animate-on-scroll" id="typeSupervised">
+            <div class="type-badge">SUPERVISED LEARNING</div>
+            <h3>Обучение с учителем</h3>
+            <p>
+              Модель тренируется на заранее размеченном датасете, где для каждого примера известен правильный ответ. Алгоритм находит правила сопоставления признаков и ответов.
+            </p>
+            <div class="type-example-box">
+              <span class="type-example-title">Пример использования</span>
+              <span class="type-example-text">Фильтрация СПАМа: на основе тысяч писем, размеченных людьми как 'спам' и 'не спам'.</span>
+            </div>
+          </div>
+
+          <!-- Unsupervised -->
+          <div class="glass-card type-card magenta animate-on-scroll delay-100" id="typeUnsupervised">
+            <div class="type-badge">UNSUPERVISED LEARNING</div>
+            <h3>Обучение без учителя</h3>
+            <p>
+              Модели предоставляется массив неструктурированных данных без явной разметки. Задача алгоритма — самостоятельно выявить внутренние паттерны, аномалии и разбить объекты на похожие группы.
+            </p>
+            <div class="type-example-box">
+              <span class="type-example-title">Пример использования</span>
+              <span class="type-example-text">Кластеризация клиентов сервиса по их потребительским привычкам для умного таргетинга.</span>
+            </div>
+          </div>
+
+          <!-- Reinforcement -->
+          <div class="glass-card type-card purple animate-on-scroll delay-200" id="typeReinforcement">
+            <div class="type-badge">REINFORCEMENT LEARNING</div>
+            <h3>Обучение с подкреплением</h3>
+            <p>
+              Обучение агента происходит в динамической интерактивной среде. Агент совершает действия, стремясь максимизировать некоторую функцию долгосрочной выгоды (награды), получая обратную связь за каждый шаг.
+            </p>
+            <div class="type-example-box">
+              <span class="type-example-title">Пример использования</span>
+              <span class="type-example-text">Обучение робота ходьбе по пересеченной местности или победа AlphaGo над чемпионом мира.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Projects Section -->
+    <section class="projects" id="projects">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <h2>Практические ИИ-Проекты</h2>
+          <p>Архитектуры популярных моделей и решений, с которыми мы сталкиваемся ежедневно</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card animate-on-scroll" id="projChatbot">
+            <div class="project-icon-box">💬</div>
+            <h3>Чат-боты и LLM</h3>
+            <p>Глубокие модели обработки естественного языка (NLP) на базе архитектуры Transformer, способные генерировать связный контекстный диалог.</p>
+            <div class="project-tags">
+              <span class="project-tag">Transformers</span>
+              <span class="project-tag">NLP</span>
+              <span class="project-tag">Generative AI</span>
+            </div>
+            <a href="#about" class="project-demo-link">
+              Подробнее 
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right-circle"><circle cx="12" cy="12" r="10"/><path d="m12 8 4 4-4 4"/><path d="M8 12h8"/></svg>
+            </a>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card animate-on-scroll delay-100" id="projFaceRec">
+            <div class="project-icon-box">🖼️</div>
+            <h3>Распознавание лиц</h3>
+            <p>Сверточные нейросети (CNN), извлекающие ключевые векторные аттракторы лица человека для мгновенной идентификации и биометрии.</p>
+            <div class="project-tags">
+              <span class="project-tag">CNN</span>
+              <span class="project-tag">Computer Vision</span>
+              <span class="project-tag">Biometrics</span>
+            </div>
+            <a href="#about" class="project-demo-link">
+              Подробнее 
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right-circle"><circle cx="12" cy="12" r="10"/><path d="m12 8 4 4-4 4"/><path d="M8 12h8"/></svg>
+            </a>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card animate-on-scroll delay-200" id="projRecommendations">
+            <div class="project-icon-box">📊</div>
+            <h3>Рекомендательные системы</h3>
+            <p>Коллаборативная фильтрация и алгоритмы анализа графов, подбирающие фильмы и товары на основе пользовательских корреляций.</p>
+            <div class="project-tags">
+              <span class="project-tag">Collaborative Filtering</span>
+              <span class="project-tag">Data Science</span>
+            </div>
+            <a href="#about" class="project-demo-link">
+              Подробнее 
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right-circle"><circle cx="12" cy="12" r="10"/><path d="m12 8 4 4-4 4"/><path d="M8 12h8"/></svg>
+            </a>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="project-card animate-on-scroll" id="projSelfDriving">
+            <div class="project-icon-box">🚘</div>
+            <h3>Беспилотные автомобили</h3>
+            <p>Комплексные ИИ-системы, обрабатывающие датчики LiDAR, камеры и гироскопы в реальном времени с помощью сенсорного слияния (Sensor Fusion).</p>
+            <div class="project-tags">
+              <span class="project-tag">Sensor Fusion</span>
+              <span class="project-tag">Autopilot</span>
+              <span class="project-tag">YOLO</span>
+            </div>
+            <a href="#about" class="project-demo-link">
+              Подробнее 
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right-circle"><circle cx="12" cy="12" r="10"/><path d="m12 8 4 4-4 4"/><path d="M8 12h8"/></svg>
+            </a>
+          </div>
+
+          <!-- Project 5 -->
+          <div class="project-card animate-on-scroll delay-100" id="projImageGen">
+            <div class="project-icon-box">🎨</div>
+            <h3>Генераторы изображений</h3>
+            <p>Диффузионные архитектуры (Diffusion Models) и GAN, создающие медиа на основе шума и латентных векторов текстовых промптов.</p>
+            <div class="project-tags">
+              <span class="project-tag">Stable Diffusion</span>
+              <span class="project-tag">GANs</span>
+              <span class="project-tag">Latent Space</span>
+            </div>
+            <a href="#about" class="project-demo-link">
+              Подробнее 
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right-circle"><circle cx="12" cy="12" r="10"/><path d="m12 8 4 4-4 4"/><path d="M8 12h8"/></svg>
+            </a>
+          </div>
+
+          <!-- Project 6 -->
+          <div class="project-card animate-on-scroll delay-200" id="projVoiceAssistant">
+            <div class="project-icon-box">🎙️</div>
+            <h3>Голосовые помощники</h3>
+            <p>Конвейерные системы распознавания речи (Speech-to-Text) и синтеза голоса (Text-to-Speech) с обработкой намерений пользователя.</p>
+            <div class="project-tags">
+              <span class="project-tag">Acoustic Models</span>
+              <span class="project-tag">TTS</span>
+              <span class="project-tag">STT</span>
+            </div>
+            <a href="#about" class="project-demo-link">
+              Подробнее 
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right-circle"><circle cx="12" cy="12" r="10"/><path d="m12 8 4 4-4 4"/><path d="M8 12h8"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Skills Roadmap Section -->
+    <section class="roadmap" id="roadmap">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <h2>Карта изучения AI и ML</h2>
+          <p>Пошаговое руководство по входу в индустрию науки о данных и нейронных сетей с нуля</p>
+        </div>
+
+        <div class="roadmap-container">
+          <div class="roadmap-timeline"></div>
+          
+          <!-- Step 1 -->
+          <div class="roadmap-step animate-on-scroll" id="stepPython">
+            <div class="roadmap-step-dot"></div>
+            <div class="glass-card roadmap-step-card">
+              <span class="step-num">ШАГ 01</span>
+              <h3>Программирование на Python</h3>
+              <p>Освойте синтаксис Python, объектно-ориентированное программирование, структуры данных, а также работу с модулями логики.</p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="roadmap-step animate-on-scroll" id="stepMath">
+            <div class="roadmap-step-dot"></div>
+            <div class="glass-card roadmap-step-card">
+              <span class="step-num">ШАГ 02</span>
+              <h3>Математическая база</h3>
+              <p>Разберитесь в основах линейной алгебры (векторы, матрицы), математического анализа (градиентный спуск), теории вероятностей и статистики.</p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="roadmap-step animate-on-scroll" id="stepDataAnalysis">
+            <div class="roadmap-step-dot"></div>
+            <div class="glass-card roadmap-step-card">
+              <span class="step-num">ШАГ 03</span>
+              <h3>Анализ данных (Data Analysis)</h3>
+              <p>Изучите базовые библиотеки обработки массивов и визуализации: Pandas, NumPy, Matplotlib и Seaborn для форматирования признаков.</p>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="roadmap-step animate-on-scroll" id="stepML">
+            <div class="roadmap-step-dot"></div>
+            <div class="glass-card roadmap-step-card">
+              <span class="step-num">ШАГ 04</span>
+              <h3>Классическое машинное обучение</h3>
+              <p>Освойте библиотеку Scikit-Learn. Изучите регрессии, деревья решений, случайный лес (Random Forest) и метрики качества классификации.</p>
+            </div>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="roadmap-step animate-on-scroll" id="stepDL">
+            <div class="roadmap-step-dot"></div>
+            <div class="glass-card roadmap-step-card">
+              <span class="step-num">ШАГ 05</span>
+              <h3>Глубокое обучение (Deep Learning)</h3>
+              <p>Погрузитесь в создание искусственных нейросетей с помощью библиотек PyTorch или TensorFlow. Разберитесь в CNN, RNN и автокодировщиках.</p>
+            </div>
+          </div>
+
+          <!-- Step 6 -->
+          <div class="roadmap-step animate-on-scroll" id="stepProjects">
+            <div class="roadmap-step-dot"></div>
+            <div class="glass-card roadmap-step-card">
+              <span class="step-num">ШАГ 06</span>
+              <h3>Самостоятельные ИИ проекты</h3>
+              <p>Создайте собственную модель классификации изображений, обучите бота играть в простую игру или разверните NLP классификатор текстов.</p>
+            </div>
+          </div>
+
+          <!-- Step 7 -->
+          <div class="roadmap-step animate-on-scroll" id="stepPortfolio">
+            <div class="roadmap-step-dot"></div>
+            <div class="glass-card roadmap-step-card">
+              <span class="step-num">ШАГ 07</span>
+              <h3>Формирование Портфолио</h3>
+              <p>Опубликуйте лучший код на GitHub, оформите детальные описания проектов, участвуйте в конкурсах Kaggle и подготовьте резюме.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Quiz Section -->
+    <section class="quiz" id="quiz">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <h2>Проверьте свои знания</h2>
+          <p>Интерактивный тест из 5 вопросов для проверки понимания базовых терминов ИИ и машинного обучения</p>
+        </div>
+
+        <div class="quiz-container animate-on-scroll">
+          <div class="quiz-wrapper">
+            
+            <!-- Active view displaying questions -->
+            <div id="quizActiveView">
+              <div class="quiz-header">
+                <span class="quiz-question-num" id="quizQuestionNum">Вопрос 1 из 5</span>
+                <div class="quiz-progress-wrapper">
+                  <div class="quiz-progress-bar" id="quizProgressBar"></div>
+                </div>
+                <span class="quiz-score-badge" id="quizCurrentProgressScore">Счет: 0/0</span>
+              </div>
+
+              <div class="quiz-question-box">
+                <h3 class="quiz-question-text" id="quizQuestionText">Здесь появится текст вопроса?</h3>
+              </div>
+
+              <div class="quiz-options" id="quizOptions">
+                <!-- Inner JavaScript Rendered Options -->
+              </div>
+
+              <!-- Answer Feedback & Explanation Box -->
+              <div class="quiz-explanation-box" id="quizExplanation">
+                <h4 id="quizExplanationTitle">🔬 ПОЯСНЕНИЕ К ОТВЕТУ</h4>
+                <p id="quizExplanationText">Разъяснение причины правильности...</p>
+              </div>
+
+              <div class="quiz-footer">
+                <button class="btn btn-primary" id="quizNextBtn" style="padding: 10px 24px; font-size: 0.9rem;">
+                  Следующий вопрос
+                </button>
+              </div>
+            </div>
+
+            <!-- Result view showing stats -->
+            <div class="quiz-result-view" id="quizResultView">
+              <div style="font-size: 4rem; margin-bottom: 20px;">🎉</div>
+              <h3 class="quiz-result-score" id="quizResultScore">5/5</h3>
+              <h4 class="quiz-result-rank" id="quizResultRank">ИИ Архитектор</h4>
+              <p class="quiz-result-text" id="quizResultText">Отличный результат!</p>
+              
+              <button class="btn btn-primary" id="quizRestartBtn">Попробовать снова</button>
+              <div class="quiz-score-history" id="quizHighestScore">Ваш лучший результат: -</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Contact Section -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <h2>Свяжитесь с Лабораторией</h2>
+          <p>Остались вопросы по ИИ или хотите начать сотрудничество? Отправьте нам письмо</p>
+        </div>
+
+        <div class="contact-container animate-on-scroll">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row-split">
+              <!-- Name Input -->
+              <div class="form-group">
+                <label for="contactName" class="form-label">Ваше имя</label>
+                <input type="text" id="contactName" class="form-input" placeholder="Александр" required />
+                <span class="form-error-msg" id="nameError">Имя должно содержать не менее 2 символов.</span>
+              </div>
+              
+              <!-- Email Input -->
+              <div class="form-group">
+                <label for="contactEmail" class="form-label">Электронная почта</label>
+                <input type="email" id="contactEmail" class="form-input" placeholder="alex@futurelab.ai" required />
+                <span class="form-error-msg" id="emailError">Введите корректный формат email.</span>
+              </div>
+            </div>
+
+            <!-- Message Textarea -->
+            <div class="form-group">
+              <label for="contactMessage" class="form-label">Сообщение</label>
+              <textarea id="contactMessage" class="form-input" placeholder="Опишите ваши цели или задайте вопрос об искусственном интеллекте..." required></textarea>
+              <span class="form-error-msg" id="messageError">Текст сообщения должен быть не короче 10 символов.</span>
+            </div>
+
+            <!-- Send button -->
+            <button type="submit" class="contact-submit-btn" id="contactSubmit">Отправить сообщение</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container row">
+        <h3>AI <span>Future Lab</span></h3>
+        <p style="color: var(--text-muted); font-size: 0.9rem; max-width: 450px; margin: 0 auto 20px;">
+          Научно-образовательный хаб об искусственном разуме и инновациях. Развивайте навыки, которые будут ценны в будущем.
+        </p>
+
+        <ul class="footer-nav">
+          <li><a href="#home" class="footer-nav-link">Главная</a></li>
+          <li><a href="#about" class="footer-nav-link">О нас</a></li>
+          <li><a href="#apps" class="footer-nav-link">Применение</a></li>
+          <li><a href="#ml-types" class="footer-nav-link">Обучение</a></li>
+          <li><a href="#roadmap" class="footer-nav-link">Дорожная карта</a></li>
+        </ul>
+
+        <div class="footer-socials">
+          <a href="#home" class="social-link" id="linkSocialGithub" aria-label="Github link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+          </a>
+          <a href="#home" class="social-link" id="linkSocialLinkedin" aria-label="LinkedIn link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9" rx="1"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="#home" class="social-link" id="linkSocialTwitter" aria-label="Twitter link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+          </a>
+        </div>
+
+        <div class="footer-bottom">
+          &copy; 2026 AI Future Lab. Разработано в научно-образовательных целях. Все права защищены.
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Прокрутить наверх">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up"><path d="m18 15-6-6-6 6"/><path d="M12 9v12"/></svg>
+    </button>
+
+    <!-- Toast message showing contact submission state -->
+    <div class="contact-feedback-toast" id="feedbackToast">
+      <div class="toast-icon">✓</div>
+      <div class="toast-text">Спасибо! Ваше сообщение успешно отправлено руководителю Лаборатории.</div>
+    </div>
+
+    <!-- Core Script -->
+    <script type="module" src="/script.js"></script>
+  </body>
+</html>
